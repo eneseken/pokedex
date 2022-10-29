@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://www.freepnglogos.com/uploads/pokemon-symbol-logo-png-31.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Pokedex - Enes Eken</title>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="search">
+        <input onkeyup="instantSearch()" type="text" class="form-control mb-5 p-3" id="input" placeholder="Name">
+        </div>
+    </div>
+    <div class="post-filter">
+        <span class="filter-item active-filter" data-filter="all">All</span>
+        <span class="filter-item " data-filter="fire">Fire</span>
+        <span class="filter-item " data-filter="ghost">Ghost</span>
+        <span class="filter-item " data-filter="electric">Electric</span>
+        <span class="filter-item " data-filter="grass">Grass</span>
+        <span class="filter-item " data-filter="water">Water</span>
+        <span class="filter-item " data-filter="poison">Poison</span>
+        <span class="filter-item " data-filter="bug">Bug</span>
+        <span class="filter-item " data-filter="rock">Rock</span>
+        <span class="filter-item " data-filter="ice">Ice</span>
+        <span class="filter-item " data-filter="dark">Dark</span>
+        <span class="filter-item " data-filter="fairy">Fairy</span>
+    </div>
+
+    <div class="container">
+        <div class="box fire">
+            <div alt="turuncu" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1  class="item">Charmander</h1>
+             <div class="fire">Fire</div>
+            </div>
+            </div>
+        </div>
+        <div class="box grass">
+            <div alt="yesil" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Bulbasaur</h1>
+             <div class="grass">Grass</div>
+            </div>
+            </div>
+        </div>
+        <div class="box water">
+            <div alt="mavi" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Squirtle</h1>
+             <div class="water">Water</div>
+            </div>
+            </div>
+        </div>
+        <div class="box poison">
+            <div alt="mor" class="imgBox">
+                <img  src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/024.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Arbok</h1>
+             <div class="poison">Poison</div>
+            </div>
+            </div>
+        </div>
+        <div class="box electric">
+            <div alt="sarı" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Pikachu</h1>
+             <div class="electric">Electric</div>
+            </div>
+            </div>
+        </div>
+        <div class="box ghost">
+            <div alt="mor" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/092.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Gastly</h1>
+             <div class="ghost">Ghost</div>
+            </div>
+            </div>
+        </div>
+        <div class="box bug">
+            <div alt="yesil" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/541.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Orbeetle</h1>
+             <div class="bug">Bug</div>
+            </div>
+            </div>
+        </div>
+        <div class="box fairy">
+            <div alt="pembe" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/860.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Morgrem</h1>
+             <div class="fairy">Fairy</div>
+            </div>
+            </div>
+        </div>
+        <div class="box rock">
+            <div alt="kahverengi" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/699.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Aurorus</h1>
+             <div class="rock">Rock</div>
+            </div>
+            </div>
+        </div>
+        <div class="box ice">
+            <div alt="mavi" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/220.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Swinub</h1>
+             <div class="ice">Ice</div>
+            </div>
+            </div>
+        </div>
+        <div class="box dark">
+            <div alt="siyah" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/198.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Murkrow</h1>
+             <div class="dark">Dark</div>
+            </div>
+            </div>
+        </div>
+        <div class="box fire">
+            <div alt="turuncu" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Charizard</h1>
+             <div class="fire">Fire</div>
+            </div>
+            </div>
+        </div>
+        <div class="box electric">
+            <div alt="sarı" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Raichu</h1>
+             <div class="electric">Electric</div>
+            </div>
+            </div>
+        </div>
+        <div class="box water">
+            <div alt="mavi" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Psyduck</h1>
+             <div class="water">Water</div>
+            </div>
+            </div>
+        </div>
+        <div class="box poison">
+            <div alt="mor" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/029.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Nidoran</h1>
+             <div class="poison">Poison</div>
+            </div>
+            </div>
+        </div>
+        <div class="box grass">
+            <div alt="yesil" class="imgBox">
+                <img  src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Ivysaur</h1>
+             <div class="grass">Grass</div>
+            </div>
+            </div>
+        </div>
+        <div class="box ghost">
+            <div alt="mor" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/302.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Sableye</h1>
+             <div class="ghost">Ghost</div>
+            </div>
+            </div>
+        </div>
+        <div class="box rock">
+            <div alt="kahverengi" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/076.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Golem</h1>
+             <div class="rock">Rock</div>
+            </div>
+            </div>
+        </div>
+        <div class="box dark">
+            <div alt="siyah" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/197.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Umbreon</h1>
+             <div class="dark">Dark</div>
+            </div>
+            </div>
+        </div>
+        <div class="box ice">
+            <div alt="mavi" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/225.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Delibird</h1>
+             <div class="ice">Ice</div>
+            </div>
+            </div>
+        </div>
+        <div class="box electric">
+            <div alt="sarı" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/171.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Lanturn</h1>
+             <div class="electric">Electric</div>
+            </div>
+            </div>
+        </div>
+        <div class="box rock">
+            <div alt="kahverengi" class="imgBox">
+                <img  src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/074.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Geodude</h1>
+             <div class="rock">Rock</div>
+            </div>
+            </div>
+        </div>
+        <div class="box bug">
+            <div alt="yesil" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Caterpie</h1>
+             <div class="bug">Bug</div>
+            </div>
+            </div>
+        </div>
+        <div class="box fire">
+            <div alt="turuncu" class="imgBox">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png" alt="">
+            </div>
+            <div class="contentPokedex">
+            <div class="details">
+             <h1 class="item">Charmelon</h1>
+             <div class="fire">Fire</div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+crossorigin="anonymous"></script>
+
+     <script>
+       function instantSearch() {
+  document.querySelectorAll('.box').
+  forEach(box => box.querySelectorAll('h1')[0].
+  innerText.toLowerCase().indexOf(document.querySelector('#input').
+  value.toLowerCase()) > -1 ? box.style.display = 'block' : box.style.display = 'none');
+}
+
+
+$(document).ready(function(){
+  $('.filter-item').click(function(){ 
+    const value = $(this).attr('data-filter');
+    if(value == 'all'){
+      $('.box').show('1000');
+    }
+    else{
+      $('.box').not('.'+value).hide('1000');
+      $('.box').filter('.'+value).show('1000');
+    }
+  })
+  $('.filter-item').click(function(){
+    $(this).addClass('active-filter').siblings().removeClass('active-filter');
+  })
+})
+     </script>
+</body>
+</html>
